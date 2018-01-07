@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Display Gitlab MR approvals",
+    "version": "1.0.0",
+    "description": "Display number of approvals in the merge request list",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "app.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
